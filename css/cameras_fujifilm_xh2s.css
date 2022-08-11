@@ -20,8 +20,8 @@ h3 {
 }
 
 .about {
-    padding-left: 15vw;
-    padding-right: 15vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
 }
 
 .form {
@@ -31,17 +31,39 @@ h3 {
     padding-bottom: 20px;
 }
 
-.comment {
+#comment {
     width: 30vw;
     height: 10vw;
 }
 
-.comment-btn {
+#comment_btn {
     width: 6vw;
     height: 4vw;
     margin: 3px;
     font-size: 9px;
     text-align: center;
+}
+
+.comSection {
+    padding: 5vw;
+}
+
+.comSection p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-top: solid 0.8px;
+    padding-top: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.comSection #user {
+    font-size: 10px;
+}
+
+#check {
+    color: red;
+    font-size: 0.7em;
 }
 
 @media only screen and (min-width: 600px) {
@@ -76,7 +98,7 @@ h3 {
         font-size: 5em;
     }
 
-    .comment-btn {
+    #comment-btn {
         font-size: 20px;
     }
 
