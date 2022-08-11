@@ -36,7 +36,7 @@
                 <li><a href="./bestBuyers.html">BestBuys</a> </li>
                 <li><a href="./reviews.html">Reviews</a> </li>
                 <li id="li_review">
-                    <a id="menu_review" href="#">Categories</a>
+                    <span id="menu_review">Categories</span>
                     <i class="fa-solid fa-angle-down"></i>
                     <div id="categories">
                         <ul>
@@ -110,9 +110,14 @@
             <div class="row">
                 <div class="form">
                     <form>
-                    <label class="comment-label" for="form-control">Comments:</label><br>
-                    <textarea class="comment"></textarea><br>
-                    <button class="comment-btn" type="button" for="form-control">Send</button></form>
+                    <label id="comment_label" for="form-control">Comments:</label><br>
+                    <textarea id="comment"></textarea><br>
+                    
+                    <button id="comment_btn" type="button" for="form-control">Send</button></form>
+                </div>
+
+                <div class="comSection">
+                    
                 </div>
             </div>
         </article>
@@ -162,5 +167,7 @@
     </footer>
 
     <script src="./js/header.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/camerafuji.js"></script>
 </body>
 </html>
