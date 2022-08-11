@@ -7,6 +7,7 @@ const validation=() =>{
     const password = $('#pass');
     const conformPass = $('#conPass');
     let namepattern = /^[a-zA-Z]+$/;
+    let validEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     let validReturn= true;
 
     if (fname.value == "") {
@@ -29,12 +30,8 @@ const validation=() =>{
         email.nextElementSibling.textContent='Please fill the email field';
         validReturn=false;
     }
-    if (email.value.indexOf('@') <= 0) {
+    if (!validEmail.test(email.value)) {
         email.nextElementSibling.textContent='**Invalid email id';
-        validReturn=false;
-    }
-    if ((email.value.charAt(email.value.length - 4) != '.') && (email.value.charAt(email.value.length - 3) != '.')) {
-        email.nextElementSibling.textContent='Please fill the email field';
         validReturn=false;
     }
     if (phone.value == "") {
