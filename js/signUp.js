@@ -45,7 +45,7 @@ const validation=() =>{
         password.nextElementSibling.textContent='  **Please fill the password';
         validReturn=false;
     }
-    else if((password.value.length <= 5) || (password.value.length > 10)) {
+    else if((password.value.length <= 5)) {
         password.nextElementSibling.textContent=' **Password is not strong';
         validReturn=false;
     }
