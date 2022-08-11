@@ -1,4 +1,4 @@
-const $ = (selector) => document.querySelector(selector);
+const $ = (selector) => document.querySelector(selector);// short-hand operator
 const validation=() =>{
     const fname = $('#firstName');
     const lname =$('#lastName');
