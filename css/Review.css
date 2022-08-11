@@ -25,12 +25,12 @@
   }
   
   h1 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    font-size: 2.0rem;
+    margin-bottom: 1rem;
   }
   
   p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   
   /* -------------------------- */
@@ -232,10 +232,16 @@ h5{
 /* media queries */
 @media (max-width:500px) {
     body{
-        background-color: blue;
-        
+         background-color: rgb(221, 221, 221);
+    }
+    .lun{
+        width: 400px;
+    }
+    .main{
+        height: 2999px;
     }
     .main0{
+        height: 3850px;
         display: flex;
         flex-flow: column;
         width: 480px;
@@ -246,13 +252,18 @@ h5{
         flex-flow: column;
         height: 500px;
     }
+    .specs{
+        font-size: 12px;
+    }
     .box2{
-        height: 900px;
+        font-size: 12px;
+        height: 1350px;
         width: 480px;  
         background-image: linear-gradient(to right, grey, whitesmoke);
         clear: both;
         border-radius:5px;
         padding-bottom: px;
+        margin-bottom: 10px;
     }
     .mx3s{
         width: 200px;
@@ -284,5 +295,49 @@ h5{
     }
     h5{
         text-align: center;
+    }
+    .container0{
+        display: flex;
+        flex-flow: column;
+        padding-bottom: 1000px;
+
+    }
+    .container1{
+        width: 480px;
+    }
+    h6{
+        font-size: 12px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 1.0rem;
+        margin-bottom: 1rem;
+      }
+      
+      p {
+        font-size: 12px;
+      }
+      .row{
+        display: flex;
+        flex-flow: column;
+      }
+      aside{
+        margin-top: 0px;
+        float: left;
+        width: 450px;
+        margin-left:0;
+      }
+      .macbook-img{
+    
+        margin-left: 0px;
+        width: 450px;
+    }
+    .video{
+        padding: px;
+        width: 400px;
+        height: 300px;
+    }
+    .para{
+        font-size: 16px;
     }
 }
